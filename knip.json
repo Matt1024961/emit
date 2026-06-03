@@ -1,0 +1,14 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "project": ["src/**/*.{ts,tsx}"],
+  "ignore": ["lambda/**", "e2e/**", "playwright.config.ts"],
+  "ignoreDependencies": ["@playwright/test"],
+  "rules": {
+    "exports": "off",
+    "types": "off",
+    "enumMembers": "off",
+    "nsExports": "off",
+    "nsTypes": "off",
+    "duplicates": "off"
+  }
+}

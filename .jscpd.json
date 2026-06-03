@@ -1,0 +1,15 @@
+{
+  "threshold": 3,
+  "minTokens": 70,
+  "reporters": ["console"],
+  "absolute": true,
+  "gitignore": true,
+  "ignore": [
+    "src/catalog/**",
+    "src/hardware/**",
+    "src/components/ui/**",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.stories.tsx"
+  ]
+}
