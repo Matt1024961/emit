@@ -40,7 +40,7 @@ Then open `http://localhost:5173`.
 
 ## Requirements
 
-- Node.js 20 or newer
+- Node.js 22 or newer
 - npm 10 or newer
 
 No backend. No database. No cloud account. The app runs fully in the browser.
