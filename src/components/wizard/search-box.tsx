@@ -15,7 +15,12 @@ export function SearchBox({ value, onClear, className, ...props }: SearchBoxProp
   return (
     <div className="relative">
       <Search className="text-muted-foreground pointer-events-none absolute left-2.5 top-1/2 size-4 -translate-y-1/2" />
-      <Input type="search" value={value} className={`pr-7 pl-8 ${className ?? ""}`} {...props} />
+      <Input
+        type="search"
+        value={value}
+        className={`pr-7 pl-8 [&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none ${className ?? ""}`}
+        {...props}
+      />
       {onClear && value ? (
         <button
           type="button"
