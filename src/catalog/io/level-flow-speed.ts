@@ -1,0 +1,73 @@
+/** Level/Flow and Speed I/O catalog items. Edit to extend — no code changes needed. */
+import type { CatalogItem } from "../../types/io";
+
+export const LEVEL_FLOW_ITEMS: CatalogItem[] = [
+  {
+    tag: "LT-401",
+    name: "Lube Oil Level",
+    category: "Input",
+    signal: "4-20mA",
+    range: "0-100 %",
+    hardwareHint: "AI",
+    formC: false,
+    tcType: null,
+    group: "Level/Flow",
+    inRecommended: false,
+    inLimited: false,
+  },
+  {
+    tag: "VT-101",
+    name: "Frame Vibration",
+    category: "Input",
+    signal: "4-20mA",
+    range: "0-2 in/s",
+    hardwareHint: "AI",
+    formC: false,
+    tcType: null,
+    group: "Level/Flow",
+    inRecommended: true,
+    inLimited: false,
+  },
+  {
+    tag: "VT-601",
+    name: "Cooler Vibration",
+    category: "Input",
+    signal: "4-20mA",
+    range: "0-2 in/s",
+    hardwareHint: "AI",
+    formC: false,
+    tcType: null,
+    group: "Level/Flow",
+    inRecommended: false,
+    inLimited: false,
+  },
+  {
+    tag: "AT-501",
+    name: "AFRC Lambda",
+    category: "Input",
+    signal: "4-20mA",
+    range: "0.7-1.3",
+    hardwareHint: "AI",
+    formC: false,
+    tcType: null,
+    group: "Level/Flow",
+    inRecommended: true,
+    inLimited: false,
+  },
+];
+
+export const SPEED_ITEMS: CatalogItem[] = [
+  {
+    tag: "ST-201",
+    name: "Engine RPM",
+    category: "Input",
+    signal: "Pulse",
+    range: "0-2400 RPM",
+    hardwareHint: "MAG",
+    formC: false,
+    tcType: null,
+    group: "Speed",
+    inRecommended: true,
+    inLimited: true,
+  },
+];
